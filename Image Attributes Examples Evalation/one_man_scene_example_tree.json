@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "scene": {
+    "scene_type": "exterior",
+    "location": "mountain_path_stairway",
+    "tone": "tense_action",
+    "narrative_perspective": "character_focus",
+    "context_summary": "A single character hurriedly climbs a steep outdoor stairway using a walking stick, showing signs of exertion and urgency."
+  },
+  "objects": [
+    {
+      "object_id": "human_01",
+      "object_type": "human",
+      "role": "traveler",
+      "position": "center_foreground",
+      "orientation": "upward",
+      "facial_visibility": "hidden",
+      "emotional_state": "strained",
+      "gesture": "leaning_forward",
+      "action": "running_up_stairs",
+      "clothing": {
+        "outerwear_type": "robe",
+        "primary_color": "light_brown"
+      },
+      "tool_used": "object_01"
+    },
+    {
+      "object_id": "object_01",
+      "object_type": "object",
+      "sub_type": "tool",
+      "position": "center_foreground",
+      "associated_with": "human_01",
+      "function": "walking_support",
+      "state": "in_use"
+    }
+  ],
+  "environment_objects": [
+    {
+      "object_id": "env_01",
+      "object_type": "object",
+      "sub_type": "stairway",
+      "position": "foreground",
+      "semantic_role": "movement_path"
+    },
+    {
+      "object_id": "env_02",
+      "object_type": "object",
+      "sub_type": "rope",
+      "position": "foreground",
+      "semantic_role": "safety_support"
+    },
+    {
+      "object_id": "env_03",
+      "object_type": "object",
+      "sub_type": "rock_cliff",
+      "position": "background",
+      "semantic_role": "terrain_boundary"
+    }
+  ],
+  "text_elements": [
+    {
+      "text_id": "text_01",
+      "text": "후우!",
+      "language": "ko",
+      "text_type": "sound_effect",
+      "position": "center_foreground",
+      "semantic_function": "exertion"
+    },
+    {
+      "text_id": "text_02",
+      "text": "후우!",
+      "language": "ko",
+      "text_type": "sound_effect",
+      "position": "upper_midground",
+      "semantic_function": "exertion"
+    },
+    {
+      "text_id": "text_03",
+      "text": "타박",
+      "language": "ko",
+      "text_type": "sound_effect",
+      "position": "lower_foreground",
+      "semantic_function": "footstep"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "human_01",
+      "target": "object_01",
+      "relationship_type": "using_tool"
+    },
+    {
+      "source": "human_01",
+      "target": "env_01",
+      "relationship_type": "moving_through",
+      "direction": "upward"
+    }
+  ],
+  "implicit_information": {
+    "social_context": "journey_or_escape",
+    "power_dynamic": "environment_over_character",
+    "shared_experience": "physical_exertion",
+    "ppl_potential": "low",
+    "ppl_reason": "Action-focused scene with no consumer-facing product exposure"
+  }
+}

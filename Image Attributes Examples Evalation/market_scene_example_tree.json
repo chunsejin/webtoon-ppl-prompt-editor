@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "scene": {
+    "scene_type": "exterior",
+    "location": "rural_market",
+    "tone": "neutral_daily_life",
+    "narrative_perspective": "observer_overhead",
+    "context_summary": "An overhead view of a rural market scene where multiple villagers, animals, and market structures coexist in everyday activity."
+  },
+  "objects": [
+    {
+      "object_id": "human_group_01",
+      "object_type": "human",
+      "role": "villagers",
+      "position": "center_midground",
+      "action": "market_activity",
+      "emotional_state": "neutral",
+      "facial_visibility": "unknown"
+    },
+    {
+      "object_id": "human_01",
+      "object_type": "human",
+      "role": "vendor",
+      "position": "right_midground",
+      "orientation": "front",
+      "action": "selling_goods",
+      "facial_visibility": "partial",
+      "clothing": {
+        "outerwear_type": "traditional_robe",
+        "primary_color": "brown"
+      }
+    },
+    {
+      "object_id": "human_02",
+      "object_type": "human",
+      "role": "customer",
+      "position": "right_midground",
+      "orientation": "left",
+      "action": "browsing_goods",
+      "facial_visibility": "partial"
+    },
+    {
+      "object_id": "animal_01",
+      "object_type": "animal",
+      "species": "horse",
+      "role": "transport_animal",
+      "position": "left_midground",
+      "orientation": "right",
+      "action": "standing",
+      "emotional_state": "calm"
+    }
+  ],
+  "environment_objects": [
+    {
+      "object_id": "market_stall_01",
+      "object_type": "object",
+      "sub_type": "furniture",
+      "position": "right_midground",
+      "semantic_role": "commerce_structure"
+    },
+    {
+      "object_id": "ground_surface_01",
+      "object_type": "object",
+      "sub_type": "terrain",
+      "position": "background",
+      "semantic_role": "movement_space"
+    }
+  ],
+  "text_elements": [
+    {
+      "text_id": "text_01",
+      "text": "시끌",
+      "language": "ko",
+      "text_type": "sound_effect",
+      "position": "center_midground",
+      "semantic_function": "ambient_noise"
+    },
+    {
+      "text_id": "text_02",
+      "text": "시끌",
+      "language": "ko",
+      "text_type": "sound_effect",
+      "position": "upper_midground",
+      "semantic_function": "ambient_noise"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_type": "environment_context",
+      "description": "Multiple humans and animals coexist in a crowded rural market environment."
+    }
+  ],
+  "implicit_information": {
+    "social_context": "daily_market_activity",
+    "power_dynamic": "balanced",
+    "shared_experience": "local_trade",
+    "ppl_potential": "low",
+    "ppl_reason": "No clearly isolated consumer-facing product; environment-focused establishing shot."
+  }
+}
